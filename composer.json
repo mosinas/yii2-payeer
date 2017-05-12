@@ -6,6 +6,7 @@
     "yii2",
     "payeer"
   ],
+  "version": "1.0.0",
   "homepage": "https://github.com/yii-dream-team/yii2-payeer",
   "license": "MIT",
   "authors": [
