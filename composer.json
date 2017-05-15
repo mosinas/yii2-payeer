@@ -1,5 +1,5 @@
 {
-  "name": "yii-dream-team/yii2-payeer",
+  "name": "mosinas/yii2-payeer",
   "description": "Yii2 Payeer Component",
   "type": "yii2-extension",
   "keywords": [
@@ -7,7 +7,7 @@
     "payeer"
   ],
   "version": "1.0.0",
-  "homepage": "https://github.com/yii-dream-team/yii2-payeer",
+  "homepage": "https://github.com/mosinas/yii2-payeer",
   "license": "MIT",
   "authors": [
     {
