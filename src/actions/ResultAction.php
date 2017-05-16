@@ -15,6 +15,8 @@ class ResultAction extends Action
     /** @var Api */
     public $api;
 
+    public $redirectUrl;
+
     /**
      * @inheritdoc
      */

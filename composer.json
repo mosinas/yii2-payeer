@@ -6,7 +6,6 @@
     "yii2",
     "payeer"
   ],
-  "version": "1.0.0",
   "homepage": "https://github.com/mosinas/yii2-payeer",
   "license": "MIT",
   "authors": [
