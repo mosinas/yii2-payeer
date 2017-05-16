@@ -15,6 +15,10 @@ class ResultAction extends Action
     /** @var Api */
     public $api;
 
+    /** @var */
+    public $redirectUrl;
+
+
     /**
      * @inheritdoc
      */
@@ -27,13 +31,18 @@ class ResultAction extends Action
 
     public function run()
     {
-        $post =  \Yii::$app->request->post();
+        $post =  \Yii::$app->request->get();
         $orderId = ArrayHelper::getValue($post, 'm_orderid', false);
 
         if (false === $orderId)
             throw new BadRequestHttpException('Missing order id');
 
         $result = $this->api->processResult($post);
+
+        if($result && isset($this->redirectUrl)) {
+            return \Yii::$app->response->redirect($this->redirectUrl);
+        }
+
         if ($result)
             echo $orderId . '|success';
         else
